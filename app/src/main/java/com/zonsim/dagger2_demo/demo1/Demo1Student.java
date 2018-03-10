@@ -3,21 +3,21 @@ package com.zonsim.dagger2_demo.demo1;
 import javax.inject.Inject;
 
 /**
- * desc
- *
- * @author tangjunwei
- * @email tjwabc@gmail.com
- * Created by home-pc on 2018/3/10.
+ * "@Inject" 注解构造无参Demo
+ * <p>
+ * Created by tangjunwei on 2018/3/10.
+ * <a href="mailto:tjwabc@gmail.com">Contact me</a>
+ * <a href="https://github.com/tangjw">Follow me</a>
  */
 
-public class Student {
+public class Demo1Student {
     
     private int no;
     
     private String name;
     
     @Inject
-    public Student() {
+    public Demo1Student() {
         this.no = 1;
         this.name = "张三";
     }

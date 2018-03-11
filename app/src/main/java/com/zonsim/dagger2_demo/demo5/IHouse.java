@@ -1,6 +1,4 @@
-package com.zonsim.dagger2_demo.demo4;
-
-import dagger.Component;
+package com.zonsim.dagger2_demo.demo5;
 
 /**
  * desc
@@ -9,12 +7,11 @@ import dagger.Component;
  * <a href="mailto:tjwabc@gmail.com">Contact me</a>
  * <a href="https://github.com/tangjw">Follow me</a>
  */
-
-@Component
-public interface BattleComponent {
-    War getWar();
+public interface IHouse {
     
-    Starks getStarks();
+    void prepareForWar();
     
-    Boltons getBoltons();
+    void reportForWar();
+    
+    
 }

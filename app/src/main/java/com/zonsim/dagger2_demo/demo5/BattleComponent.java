@@ -1,4 +1,6 @@
-package com.zonsim.dagger2_demo.demo4;
+package com.zonsim.dagger2_demo.demo5;
+
+import com.zonsim.dagger2_demo.demo5.War;
 
 import dagger.Component;
 
@@ -10,11 +12,11 @@ import dagger.Component;
  * <a href="https://github.com/tangjw">Follow me</a>
  */
 
-@Component
+@Component(modules = BraavosModule.class)
 public interface BattleComponent {
     War getWar();
     
-    Starks getStarks();
+    Cash getCash();
     
-    Boltons getBoltons();
+    Soldiers getSoliders();
 }

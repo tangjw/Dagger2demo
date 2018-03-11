@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<RandomUsers> call, Throwable t) {
+                System.out.println(t.getMessage());
                 Timber.i(t.getMessage());
             }
         });
